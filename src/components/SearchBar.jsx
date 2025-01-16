@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-import { GrLocation } from "react-icons/gr";
 import { FaSearch } from "react-icons/fa";
-import { MdLightMode, MdNightlight } from "react-icons/md";
+import { MdLightMode, MdNightlight, MdOutlineLocationOn } from "react-icons/md";
 import { useState } from "react";
 import { useWeather } from "../context/WeatherContext";
 
@@ -25,7 +24,7 @@ function SearchBar({ darkmode, setDarkMode }) {
         SkyUpdates
       </h2>
       <div className="items-center gap-1 hidden sm:flex dark:text-white">
-        {weather ? <GrLocation /> : ""}
+        {weather ? <MdOutlineLocationOn /> : ""}
         <p>{city}</p>
       </div>
 
